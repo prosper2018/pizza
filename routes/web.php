@@ -19,6 +19,10 @@ Route::get('/', function () {
 
 //Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/pizza', 'PizzaController@index')->name('pizza.index');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
